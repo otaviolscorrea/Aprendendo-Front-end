@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aorendendo na pratica</title>
+    <link rel="stylesheet" href="pratica.css" />
+</head>
+<body>
+    <h1>Aula pratica</h1>
+    <h3>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h3>
+    <h6>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</h6>
+    
+    <p id="id1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in risus id leo ullamcorper rutrum. Quisque ultricies, purus ut iaculis tincidunt, elit tortor rutrum massa, et consequat lorem tellus in magna. Maecenas tincidunt, ex at cursus pharetra, odio neque consequat turpis, id lobortis nisl purus ac felis. Donec vel sollicitudin risus, non euismod enim. In leo libero, cursus porta nisi ut, fermentum dapibus enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque id erat diam. Aliquam laoreet justo nisi, vitae blandit velit vestibulum maximus. Vivamus pharetra rhoncus ex, ut viverra sem tempus id. Nullam hendrerit rhoncus ultrices. Donec accumsan odio non nulla cursus auctor. Cras ut gravida lorem, vitae aliquam sapien. Maecenas rutrum massa nec odio aliquam scelerisque. Curabitur in leo sapien. Donec varius cursus elementum. Phasellus convallis congue nibh a varius.
+    
+    </p>
+    <p id="id2">Quisque condimentum nisi vel mauris elementum lacinia. Pellentesque sit amet elit a nisl fringilla sagittis. Nullam vel porta urna, at congue velit. Vivamus gravida libero lorem, eu cursus est gravida vel. Quisque quis sagittis augue. Praesent rhoncus dolor urna, a interdum ex imperdiet ut. Vivamus facilisis tortor lacus, et ultrices justo mattis ac. Morbi vitae sapien metus. Sed non tortor vel ipsum molestie posuere. Quisque gravida varius tristique. Maecenas eu enim ultrices, accumsan odio vel, suscipit mauris. Quisque gravida iaculis pellentesque. Donec tristique orci eget odio sollicitudin, id pretium odio ultricies.
+    
+    </p>
+
+    <ul>
+        <li>
+            Café
+            <ul>
+                <Li>Capuccino</Li>
+                <li>Expresso</li>
+            </ul>
+        </li>
+        <li>Chá
+            <ul>
+                <li>Chá Preto</li>
+                <li>Chá Verde</li>
+            </ul>
+
+        </li>
+        <Li>Leite</Li>
+
+    </ul>
+
+    <table border="0">
+        
+        <thead>
+            <tr>
+                <th>Item1</th>
+                <th>Item2</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <h1 style="background-color: greenyellow;">Area de cadastro</h1>
+    <br>
+   
+    <form action="paginas/cadastro.html" method="GET"> 
+        
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="senha">Senha </label>
+        <input type="password" id="senha">
+        
+        <Label>
+            <input type="checkbox" id="maior"> 
+            Declaro ser maior de idade ? <a id="maior1" href="paginas/maiordeidade.html" target="_blank">Porque ser maior?</a>        
+        </label>
+
+        <label>Selecione o sexo</label>
+        <input type="radio" name="sexo" id="masculino"><label for="masculino">Masculino</label>
+        <input type="radio" name="sexo" id="feminino"><label for="feminino">Feminino</label>
+        <label for="nascimento">Data de Nascimento</label> 
+        <input type="date" id="nascimento">
+        <label for="naturalidade">Estado de nascimento</label>
+        <select name="ordenação" id="naturalidade">
+            <option selected></option>
+            <option value="MG">MG</option>
+            <option value="ES">ES</option>
+        </select>
+        <label for="descricao">Descreve um pouco sobre voce</label>
+        <textarea name="descricao" id="descricao"></textarea><br>
+
+        
+        <input type="submit" value="Enviar Fomulario" id="submit">
+
+
+    </form>
+    <br>
+    <h1>Area de Profissional</h1>
+    <form action="paginas/areapro.php" method="POST" enctype="multipart/form-data"> 
+        
+        <input type="hidden" name="country" value="BR"> <!--Campo oculto do Formulario "hidden"-->
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+        
+            <label for="">
+            Primeiro Nome: <br>
+            <input type="text" name="namelogin" required minlength="2" maxlength="100"/>
+        </label><br>
+        
+        <label for="">
+            Ultimo Nome: <br>
+            <input type="text" name="lastnamelogin" minlength="2" maxlength="100"/>
+        </label><br>
+        
+        <label for="">
+            Idade: <br>
+            <input type="number" name="age" required min="18" max="120"/>
+        </label><br>
+        
+        <label for="">
+            Email <br>
+            <input type="text" name="emailpro" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-.]+$)" title="Endereço de email"/>
+        </label><br>
+        <label for="">
+            Foto<br>
+            <input type="file" name="photo" accept="image/*"/>
+        </label><br>
+        </fieldset>
+       
+
+    
+        <fieldset>
+            <legend>Dados Profissinais</legend>
+        <label for="">
+            Nome da empresa: <br>
+            <input type="text" name="companyname">
+        </label><br>
+        <label for="">
+            Cargo na Empresa<br>
+            <input type="text" name="companyjobtitle">
+        </label><br>
+        </fieldset>
+        <input type="submit" value="Cadastro" id="cadastro">
+    </form>
+
+    <h1>Titulo do Site</h1>
+    <div class="container">
+        Este é um <strong>texto</strong> qualquer
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>

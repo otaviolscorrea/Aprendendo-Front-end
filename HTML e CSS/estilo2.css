@@ -1,0 +1,22 @@
+ul {color: red;}
+ol {color: green;}
+ol li {font-weight: bold; font-size: 30px;}
+li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+
+#titulo {
+    
+    color:#F00; 
+    border: 5px solid #00F;
+    background-color: #000;
+    border-radius: 100px;
+}
+.texto {
+    color: #ff00c7;
+
+
+}

@@ -1,0 +1,9 @@
+3 formar de inserção do CSS no HTML:
+- CSS inline - atributo <style>                      Principal
+- CSS interno - atribuir no head todos os style      Secundario
+- CSS externo - linkar um arquivo CSS para o HTML    Terciario
+
+3 Tips de seleção
+- Propriedade
+- ID
+- Class
